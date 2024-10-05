@@ -14,10 +14,7 @@ app.get('/', (req, res) => {
 }); 
   
 // Rota de exemplo para retornar uma lista de livros
-const books = [
-  { id: 1, title: 'O Alquimista', author: 'Paulo Coelho' },
-  { id: 2, title: 'Dom Casmurro', author: 'Machado de Assis' }
-];
+
 // Listar todos os livros
 app.get('/api/books', (req, res) => {
   res.json(books);
