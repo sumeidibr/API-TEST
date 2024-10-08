@@ -7,7 +7,7 @@ app.use(cors());
 
 // Middleware para permitir JSON
 app.use(express.json());
-
+ 
 // Rota para verificar se o servidor está rodando
 app.get('/', (req, res) => {
   res.send('API está funcionando!');
