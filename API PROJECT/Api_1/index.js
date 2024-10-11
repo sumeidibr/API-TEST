@@ -9,7 +9,10 @@ app.use(cors());
 app.use(express.json());
  
 // Rota para verificar se o servidor está rodando
-
+app.get('/', (req, res) => {
+  res.send('API está funcionando!');
+}); 
+  
 // Rota de exemplo para retornar uma lista de livros
 const books = [
   { id: 1, title: 'O Alquimista', author: 'Paulo Coelho' },
